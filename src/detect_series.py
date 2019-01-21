@@ -35,8 +35,9 @@ for x in series:
     series_no = x[0][0].strftime('%Y-%m-%d-%H-%M-%S')
     series_path = os.path.abspath(os.path.join(target_path, series_no))
     if not(os.path.isdir(series_path) and os.path.exists(series_path)):
-        os.mkdir(series_path)
+        os.makedirs(series_path)
     for pic in x:
         target_file = os.path.join(series_path, os.path.basename(pic[1]))
+        print('Copying {0} to {1}'.format(pic[1], target_file))
         shutil.copyfile(pic[1], target_file)
 
