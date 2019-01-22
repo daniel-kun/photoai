@@ -1,3 +1,6 @@
 exifread
 filetype
 Pillow
+scikit-image
+numpy
+scipy
