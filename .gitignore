@@ -5,6 +5,11 @@ load_db.py
 # Local script to build DB from a folder hierarchy full of photos:
 build_db.py
 photos.db
+SampleOutput
+
+# Vim Swap Files:
+*.swp
+*.swa
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
